@@ -17,5 +17,5 @@ while True:
     downlaod.click()
     i = i + 1
 
-    time.sleep(10)
+    time.sleep(5)
 
