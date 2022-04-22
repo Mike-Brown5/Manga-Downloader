@@ -6,7 +6,9 @@ driver = webdriver.Chrome(path)
 
 driver.get("https://w13.mangafreak.net/Manga/Solo_Leveling")
 
-i = 8
+q = input("enter the last chapter you have: ")
+
+i = q + 1
 
 try:
     while True:
@@ -18,4 +20,4 @@ try:
         time.sleep(5)
 except:
     downlaod.quit()
-    
+
