@@ -1,8 +1,5 @@
 from selenium import webdriver
 import time
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
 path = "./Crome_driver/chromedriver"
 
 driver = webdriver.Chrome(path)
