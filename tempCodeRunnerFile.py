@@ -1,0 +1,1 @@
+https://images.mangafreak.net/downloads/Solo_Leveling_2
