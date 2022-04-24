@@ -1,4 +1,3 @@
-import time
-# path = "./Crome_driver/chromedriver"
-
-# # driver =
+link = input("Enter ur link for the manga: ")
+Flink = link[:33]
+link = link[33:]
