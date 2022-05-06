@@ -23,11 +23,13 @@ try:
 
         downlaod = driver.find_element_by_xpath(f'//a[contains(@href,"https://images.mangafreak.net/downloads/{link}_{i}")]')
         downlaod.click()
+
+        print("Downloading......")
+        time.sleep(8)
         with ZipFile(f'/home/mike/Downloads/{link}_{i}.zip', 'r') as zipObj:
         # Extract all the contents of zip file in different directory
             zipObj.extractall(f'/home/mike/Downloads/Manga/{link}/{link}_{i}')
         i = i + 1
-
-        time.sleep(5)
+        print(f"Done: {link}_{i}")
 except:
     downlaod.quit()
