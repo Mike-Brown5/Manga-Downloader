@@ -1,4 +1,5 @@
 from selenium import webdriver
+from zipfile import ZipFile
 import time
 path = "./Crome_driver/chromedriver"
 
@@ -22,10 +23,11 @@ try:
 
         downlaod = driver.find_element_by_xpath(f'//a[contains(@href,"https://images.mangafreak.net/downloads/{link}_{i}")]')
         downlaod.click()
+        with ZipFile(f'/home/mike/Downloads/{link}_{i}.zip', 'r') as zipObj:
+        # Extract all the contents of zip file in different directory
+            zipObj.extractall(f'/home/mike/Downloads/Manga/{link}/{link}_{i}')
         i = i + 1
 
         time.sleep(5)
 except:
     downlaod.quit()
-
-export
